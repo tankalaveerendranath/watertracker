@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Measuring Our True Impact on Freshwater Resources</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- navigation -->
+    <link href="css/nav.css" type="text/css" rel="stylesheet" media="all">
+    <!-- banner slider -->
+    <link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+
+    <style>
+        /* Basic styling for the suggestions list */
+        .suggestions {
+            border: 1px solid #ccc;
+            max-height: 150px;
+            overflow-y: auto;
+            background-color: #fff;
+            position: absolute;
+            z-index: 1000;
+            width: 100%;
+            max-width: 700px;
+            min-width: 200px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -o-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -moz-border-radius: 4px;
+        }
+        .suggestions div {
+            padding: 8px;
+            cursor: pointer;
+        }
+        .suggestions div:hover {
+            background-color: #f0f0f0;
+        }
+
+
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 500px;
+        }
+        .close-btn {
+            float: right;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none; /* Hide by default */
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        #backToTop:hover {
+            background-color: #0056b3;
+        }
+
+        .btn {
+            max-width: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header d-lg-flex justify-content-between align-items-center">
+                <div class="header-agile">
+                    <h1>
+                        <a class="navbar-brand editContent logo" href="index.html">
+                            <span class="fa fa-tint" aria-hidden="true"></span>Water
+                        </a>
+                    </h1>
+                </div>
+                <div class="nav_w3ls">
+                    <nav>
+                        <input class="menu-btn" type="checkbox" id="menu-btn" />
+                        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                        <ul class="menu">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#why">Why Us?</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#calculate">Calculate</a></li>
+                            
+                            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <!-- banner -->
+    <div class="banner_w3lspvt">
+        <div class="csslider infinity" id="slider1">
+            
+            
+            <ul class="banner_slide_bg">
+                <li>
+                    <div class="container">
+                        <div class="w3ls_banner_txt">
+                            <h3 class="w3ls_pvt-title">Hydro Tracker:</h3>
+                            <p>Measuring Our True Impact on Freshwater Resources.</p>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- about-->
+    <section class="wthree-row py-md-5" id="about">
+        <div class="container py-lg-5">
+            <div class="row abbot-main py-lg-5 py-4">
+                <div class="col-lg-4 abbot-right mt-lg-0 mt-3">
+                    <img src="images/a2.jpg" class="img-fluid img-thumbnail" alt="" />
+                </div>
+                <div class="offset-lg-1 col-lg-7 about-text-grid">
+                    
+                    <h4 class="w3pvt-title">what we do
+                    </h4>
+                    <p class="mt-3">The water footprint is a measure of the total volume of freshwater used to produce goods and services consumed by an individual, community, or business. It includes both direct water usage (like drinking or washing) and indirect usage (such as water used in agriculture or manufacturing). The water footprint can be categorized into three types: blue (surface and groundwater), green (rainwater), and grey (polluted water). It helps assess the sustainability of water use in various processes</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //about -->
+    <!-- why us -->
+    <section class="wthree-row pb-md-5" id="why">
+        <div class="container pb-lg-5 pb-4">
+            <div class="row abbot-main flex-row-reverse">
+                <div class="offset-lg-1 col-lg-4 abbot-right mt-lg-0 mt-3">
+                    <img src="images/a1.jpg" class="img-fluid img-thumbnail" alt="" />
+                </div>
+                <div class="col-lg-7 about-text-grid">
+                    
+                    <h4 class="w3pvt-title">why us
+                    </h4>
+                    <p class="mt-3">Understanding the water footprint is crucial for sustainable resource management, and this is where we come in. We offer expertise in analyzing the total volume of freshwater used across various sectors, from individual consumption to community and business practices. Our approach goes beyond just assessing direct water usage like drinking or washing. We also delve into the indirect water consumption embedded in agriculture, manufacturing, and other processes.</p>
+                    <p class="my-4">We break down the water footprint into three essential categories—blue (surface and groundwater), green (rainwater), and grey (polluted water)—providing a comprehensive view of your water use. By choosing us, you're taking a proactive step toward sustainable water management, ensuring that every drop is accounted for and responsibly utilized. Let us help you measure, manage, and minimize your water footprint for a more sustainable future.</p>
+
+                    <a href="#calculate" class="text-capitalize serv_link btn bg-theme scroll">Calculate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //why us -->
+    <!-- subscribe -->
+    <div class="abt_bottom py-lg-5 bg-theme" id="calculate">
+        <div class="container py-sm-4 py-3">
+            <h4 class="abt-text text-capitalize text-center mb-0">Water Footprint Calculator</h4>
+            <div class="subscribe-grid">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <form>
+                            <input id="search" type="text" placeholder="Search here..." name="search" required="" oninput="showSuggestions(this.value)">
+                            <div id="suggestions" class="suggestions"></div>
+                            <button class="btn1" type="button">
+                                Calculate
+                            </button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //subscribe -->
+    
+    <!-- team -->
+    <section class="team_wthree" id="team">
+        <div class="container py-lg-5 py-4 ">
+            <div class="sec-main text-center">
+                
+                <h4 class="w3pvt-title">our team
+                </h4>
+            </div>
+            <div class="row py-4 py-lg-5">
+                <div class="col-lg-4 col-md-6">
+                    <!-- <div class="team_grid">
+                        <img src="images/te1.jpg" class="img-fluid img-thumbnail" alt="" />
+                    </div> -->
+                    <div class="team-text bg-theme1">
+                        <h4 class="text-theme1">Laura Hill</h4>
+                        <span class="my-2 d-block">Designation</span>
+                        <p>vallis molestie arcu morbi dapibus suscipit ante sit effic arcu.</p>
+                       
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-md-0 my-4">
+                    <!-- <div class="team_grid">
+                        <img src="images/te2.jpg" class="img-fluid img-thumbnail" alt="" />
+                    </div> -->
+                    <div class="team-text bg-theme1">
+                        <h4 class="text-theme2">Thomson Doe</h4>
+                        <span class="my-2 d-block">Designation</span>
+                        <p>vallis molestie arcu morbi dapibus suscipit ante sit efficitur.</p>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-auto mt-lg-0 mt-md-4">
+                    <!-- <div class="team_grid">
+                        <img src="images/te3.jpg" class="img-fluid img-thumbnail" alt="" />
+                    </div> -->
+                    <div class="team-text bg-theme1">
+                        <h4 class="text-theme3">Myra Doe</h4>
+                        <span class="my-2 d-block">Designation</span>
+                        <p>vallis molestie arcu morbi dapibus suscipit ante sit itur.</p>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row py-4 py-lg-5">
+                <div class="col-lg-4 col-md-6">
+                    <!-- <div class="team_grid">
+                        <img src="images/te1.jpg" class="img-fluid img-thumbnail" alt="" />
+                    </div> -->
+                    <div class="team-text bg-theme1">
+                        <h4 class="text-theme1">Laura Hill</h4>
+                        <span class="my-2 d-block">Designation</span>
+                        <p>vallis molestie arcu morbi dapibus suscipit ante sit effic arcu.</p>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-md-0 my-4">
+                    <!--  <div class="team_grid">
+                        <img src="images/te2.jpg" class="img-fluid img-thumbnail" alt="" />
+                    </div> -->
+                    <div class="team-text bg-theme1">
+                        <h4 class="text-theme2">Thomson Doe</h4>
+                        <span class="my-2 d-block">Designation</span>
+                        <p>vallis molestie arcu morbi dapibus suscipit ante sit efficitur.</p>
+                       
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-auto mt-lg-0 mt-md-4">
+                    <!--  <div class="team_grid">
+                        <img src="images/te3.jpg" class="img-fluid img-thumbnail" alt="" />
+                    </div> -->
+                    <div class="team-text bg-theme1">
+                        <h4 class="text-theme3">Myra Doe</h4>
+                        <span class="my-2 d-block">Designation</span>
+                        <p>vallis molestie arcu morbi dapibus suscipit ante sit itur.</p>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //team -->
+    
+    
+    <!-- contact -->
+    <section class="w3_pvt_stats contact-wthree pt-lg-5 pt-4" id="contact">
+        <div class="container pt-md-5 pt-4">
+            <div class="text-center pb-4">
+                
+                <h4 class="w3pvt-title">contact us</h4>
+            </div>
+            <div class="col-12 contact-left-w3layouts pt-md-4">
+                <div class="w3layouts-contact-top text-center">
+                    <p>1234k Avenue,Block-4,New York City.</p>
+                    <p class="mt-2">Donec mi nulla, auctor nec sem a, ornare auctor mi. Sed mi tortor, commodo a felis
+                        in,
+                        fringilla
+                        tincidunt
+                        nulla. Vestibulum volutpat non eros ut vulpuuctor nec sem </p>
+                </div>
+            </div>
+            <div class="row py-lg-5 py-sm-4 pt-4">
+                <div class="col-12 mb-4">
+                    <div class="text-center">
+                        <h6 class="sub-title">send us a note</h6>
+                    </div>
+                    <!-- register form grid -->
+                    <div class="register-top1">
+                        <form action="#" method="post" class="register-wthree">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>
+                                            First name
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="Johnson" name="email"
+                                            required="">
+                                    </div>
+                                    <div class="col-md-6 mt-md-0 mt-4">
+                                        <label>
+                                            Last name
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="Kc" name="name" required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>
+                                            Mobile
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="xxxx xxxxx" name="email"
+                                            required="">
+                                    </div>
+                                    <div class="col-md-6 mt-md-0 mt-4">
+                                        <label>
+                                            Email
+                                        </label>
+                                        <input class="form-control" type="email" placeholder="example@email.com" name="email"
+                                            required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>
+                                            Your message
+                                        </label>
+                                        <textarea placeholder="Type your message here" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-w3layouts btn-block  bg-theme text-white w-100 font-weight-bold text-uppercase">Send</button>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--  //register form grid ends here -->
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- //contact -->
+    <footer class="bg-theme1">
+        
+    </footer>
+
+    <a href="#" id="backToTop">Back to Top</a>
+
+    <!-- Modal for pie chart -->
+    <div id="chartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <canvas id="myPieChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        // Sample data for suggestions
+        const suggestionsList = [
+            'Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig', 'Grape', 'Honeydew',
+            'Kiwi', 'Lemon', 'Mango', 'Nectarine', 'Orange', 'Papaya', 'Quince', 'Raspberry',
+            'Strawberry', 'Tomato', 'Ugli Fruit', 'Watermelon'
+        ];
+
+        var myPieChart = null
+
+        // Function to show suggestions based on user input
+        function showSuggestions(value) {
+            const suggestionsBox = document.getElementById('suggestions');
+            // Clear previous suggestions
+            suggestionsBox.innerHTML = '';
+            
+            // If the input is empty, hide suggestions
+            if (!value) {
+                suggestionsBox.style.display = 'none';
+                return;
+            }
+
+            // Filter the suggestions based on the input
+            const filteredSuggestions = suggestionsList.filter(item =>
+                item.toLowerCase().startsWith(value.toLowerCase())
+            );
+
+            // If there are no matches, hide suggestions
+            if (filteredSuggestions.length === 0) {
+                suggestionsBox.style.display = 'none';
+                return;
+            }
+
+            // Show suggestions
+            filteredSuggestions.forEach(item => {
+                const suggestionDiv = document.createElement('div');
+                suggestionDiv.textContent = item;
+                suggestionDiv.onclick = () => {
+                    document.getElementById('search').value = item;
+                    suggestionsBox.innerHTML = '';
+                    suggestionsBox.style.display = 'none';
+                };
+                suggestionsBox.appendChild(suggestionDiv);
+            });
+            suggestionsBox.style.display = 'block';
+        }
+
+        $(".btn1").click(function() {
+            if($("#search").val() != '') {
+                openModal();
+            }
+        })
+
+        function openModal() {
+            const modal = document.getElementById('chartModal');
+            modal.style.display = 'flex';
+            showPieChart();
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            const modal = document.getElementById('chartModal');
+            modal.style.display = 'none';
+            myPieChart.destroy();
+        }
+
+        // Function to show the pie chart using Chart.js
+        function showPieChart() {
+            
+            const ctx = document.getElementById('myPieChart').getContext('2d');
+            var data;
+            var inputval = document.getElementById("search").value
+            if(inputval == "Apple") {
+                data = {
+                    labels: [
+                        'Reproductive Stage (15%)',
+                        'Maturation and Harvesting (3%)',
+                        'Land Preparation (25%)',
+                        'Transplanting/Seeding (7%)',
+                        'Vegetative Growth (50%)'
+                    ],
+                    datasets: [{
+                        data: [15, 3, 25, 7, 50],
+                        backgroundColor: [
+                            '#FF6384',
+                            '#36A2EB',
+                            '#FFCE56',
+                            '#4BC0C0',
+                            '#9966FF'
+                        ],
+                        hoverBackgroundColor: [
+                            '#FF6384',
+                            '#36A2EB',
+                            '#FFCE56',
+                            '#4BC0C0',
+                            '#9966FF'
+                        ]
+                    }]
+                };
+            } else if(inputval == "Banana") {
+                data = {
+                    labels: [
+                        'Reproductive Stage (25%)',
+                        'Maturation and Harvesting (5%)',
+                        'Land Preparation (15%)',
+                        'Transplanting/Seeding (8%)',
+                        'Vegetative Growth (65%)'
+                    ],
+                    datasets: [{
+                        data: [25, 5, 15, 8, 65],
+                        backgroundColor: [
+                            '#FF6384',
+                            '#36A2EB',
+                            '#FFCE56',
+                            '#4BC0C0',
+                            '#9966FF'
+                        ],
+                        hoverBackgroundColor: [
+                            '#FF6384',
+                            '#36A2EB',
+                            '#FFCE56',
+                            '#4BC0C0',
+                            '#9966FF'
+                        ]
+                    }]
+                };
+            }
+
+            
+
+            const config = {
+                type: 'pie',
+                data: data,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                                }
+                            }
+                        },
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        }
+                    }
+                }
+            };
+
+            console.log(myPieChart)
+
+            
+
+            myPieChart = new Chart(ctx, config);
+            console.log(myPieChart)
+            
+
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('chartModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                myPieChart.destroy();
+            }
+        }
+
+        document.querySelectorAll('a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                // Prevent default anchor click behavior
+                e.preventDefault();
+                
+                // Get the target element to scroll to
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                // Scroll to the target element
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth', // Optional: adds smooth scrolling
+                        block: 'start' // Optional: aligns the top of the element to the top of the viewport
+                    });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            
+            if (window.scrollY > 300) { // Show button after scrolling down 300px
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        // Scroll to the top when the button is clicked
+        document.getElementById('backToTop').addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent the default anchor click behavior
+
+            // Smooth scroll to the top
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Optional: adds smooth scrolling
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
